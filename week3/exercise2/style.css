@@ -1,0 +1,75 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-weight: 500;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+h1 {
+  margin-block: 1.5em;
+  font-size: 2.5em;
+}
+
+h1 span {
+  color: gray;
+}
+
+section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+section article {
+  display: grid;
+  justify-content: center;
+  margin: 1.5em;
+}
+
+section article h2 {
+  margin: 0.8em;
+  color: gray;
+}
+
+section article p {
+  /* max-width: 473px; */
+  /* margin: auto; */ /* Whenever you give width or max-width, try margin:auto to center */
+  line-height: 1.4;
+  font-size: 1.4em;
+}
+
+img {
+  width: 100%;
+  height: 209px;
+  object-fit: cover; /* Whenever you give height, give object-fit */
+  margin-block: 0.6em;
+}
+
+button {
+  background-color: white;
+  width: 230px;
+  padding: 1em 1.2em;
+  margin-block: 3.5em;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 600px) {
+  h1 {
+    width: 90%;
+  }
+  section {
+    grid-template-columns: 1fr;
+  }
+
+  section article {
+    margin: 1em;
+  }
+}

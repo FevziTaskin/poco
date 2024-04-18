@@ -1,0 +1,21 @@
+section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border: 4px solid rgb(83, 82, 82);
+  border-radius: 0.4em;
+}
+
+section article {
+  flex-grow: 1;
+  width: 220px;
+  padding: 0.4em;
+  margin: 0.4em;
+  background-color: rgb(109, 164, 164);
+  border-radius: 0.3em;
+  font-size: 1.2em;
+}
+
+/* section article:first-child {
+  flex-grow: 10;
+} */

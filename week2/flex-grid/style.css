@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 30px;
+  text-align: center;
+}
+
+header {
+  padding: 4em;
+  background-color: red;
+}
+
+.features {
+  display: flex;
+  justify-content: space-between;
+  background-color: blue;
+}
+
+section article {
+  padding: 3.5em;
+  flex-grow: 1;
+}
+
+section article:first-child {
+  background-color: aqua;
+}
+
+section article:nth-child(2) {
+  background-color: pink;
+}
+
+section article:last-child {
+  background-color: bisque;
+}
+
+.signup {
+  padding: 1.5em;
+  background-color: blueviolet;
+}
+
+.content {
+  background-color: aliceblue;
+  padding: 3rem;
+}
